@@ -25,7 +25,7 @@ class viewcontact : AppCompatActivity() {
         phones.text=phone
         var email=intent.getStringExtra("emailAddress")
         emails.text=email
-        var imagesIntent=intent.getStringExtra("images").toString()
+        var imagesIntent=intent.getStringExtra("imageUrl").toString()
         Picasso.get().load(imagesIntent).into(images)
 
 
