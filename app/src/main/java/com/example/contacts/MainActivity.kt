@@ -11,15 +11,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        display(listOf(Contacts("Eunice Atieno","0798676088","eunniceatieno@gmailcom",imageUrl = "https://bit.ly/3diqtVQhttps://bit.ly/3diqtVQ" ),
-            Contacts("Nelly Mutheu","0798676088","mutheunelly@gmailcom",imageUrl = "https://www.pexels.com/photo/person-holding-a-note-397440/"),
-            Contacts("Wesley Mbote","0798676088","mbotewesley@gmail.com",imageUrl = "https://www.pexels.com/photo/yellow-flower-in-macro-photography-3923589/"),
-            Contacts("Mercy Birungi","0798676088","birungimercy@gmail.com",imageUrl = "https://www.pexels.com/photo/person-holding-a-note-3974405/"),
-            Contacts("Nelly mutheu","0798676088","mutheunelly@gmail.com",imageUrl = "https://www.pexels.com/photo/yellow-flower-in-macro-photography-3923589/"),
-            Contacts("Riri mutanu","0798676088","ririmutanu@gmail.com",imageUrl = "https://www.pexels.com/photo/person-holding-a-note-3974405/"),
-            Contacts("Cate wanjiku","0798676088","wanjikucate@gmail.com",imageUrl = "https://www.pexels.com/photo/yellow-flower-in-macro-photography-3923589/"),
-            Contacts("Eunice atieno","0798676088","eunniceatieno@gmailcom",imageUrl = "https://www.pexels.com/photo/person-holding-a-note-3974405/"),
-            Contacts("night akoth","0798676088","eunniceatieno@gmailcom",imageUrl = "https://www.pexels.com/photo/yellow-flower-in-macro-photography-3923589/")))
+        display(listOf(Contacts("Eunice Atieno","0798676088","eunniceatieno@gmailcom",imageUrl = "https://bit.ly/2SsANU8" ),
+            Contacts("Nelly Mutheu","0798676088","mutheunelly@gmailcom",imageUrl = "https://bit.ly/3qvjLBe"),
+            Contacts("Wesley Mbote","0798676088","mbotewesley@gmail.com",imageUrl = "https://bit.ly/3gYQmws"),
+            Contacts("Mercy Birungi","0798676088","birungimercy@gmail.com",imageUrl = "https://bit.ly/2SsANU8"),
+            Contacts("Nelly mutheu","0798676088","mutheunelly@gmail.com",imageUrl = "https://bit.ly/3qrpeJA"),
+            Contacts("Riri mutanu","0798676088","ririmutanu@gmail.com",imageUrl = "https://bit.ly/3gYQmws"),
+            Contacts("Cate wanjiku","0798676088","wanjikucate@gmail.com",imageUrl = "https://bit.ly/2SsANU8"),
+            Contacts("Eunice atieno","0798676088","eunniceatieno@gmailcom",imageUrl = "https://bit.ly/3qvjLBe"),
+            Contacts("night akoth","0798676088","eunniceatieno@gmailcom",imageUrl = "https://bit.ly/3qrpeJA")))
     }
 
     fun display(contactList: List<Contacts>){
