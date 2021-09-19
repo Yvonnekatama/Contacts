@@ -2,7 +2,6 @@ package com.example.contacts
 
 import android.content.Context
 import android.content.Intent
-import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.contacts.UI.viewcontact
 import com.squareup.picasso.Picasso
 
 class ContactsAdapter( var contactsList:List<Contacts>,var context:Context):RecyclerView.Adapter<contactsViewHolder>(){
@@ -26,7 +26,7 @@ class ContactsAdapter( var contactsList:List<Contacts>,var context:Context):Recy
         holder.tvemail.text=currentContact.email
         Picasso.get().load(currentContact.imageUrl).into(holder.imgContact)
         holder.cvContacts.setOnClickListener{
-         var intent=Intent(context,viewcontact::class.java)
+         var intent=Intent(context, viewcontact::class.java)
             intent.putExtra("name",currentContact.name)
             intent.putExtra("phoneNumber",currentContact.phoneNumber)
             intent.putExtra("emailAddress",currentContact.email)
@@ -39,7 +39,6 @@ class ContactsAdapter( var contactsList:List<Contacts>,var context:Context):Recy
     override fun getItemCount(): Int {
        return contactsList.size
     }
-
 }
 
 class contactsViewHolder(itemView:View):RecyclerView.ViewHolder(itemView) {
